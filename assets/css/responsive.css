@@ -1,0 +1,97 @@
+/* assets/css/responsive.css */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .feed-container {
+        grid-template-columns: 1fr 2fr;
+    }
+    
+    .sidebar:last-child {
+        display: none;
+    }
+    
+    .nav a span {
+        display: none;
+    }
+    
+    .nav a {
+        font-size: 18px;
+        margin-left: 15px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+    .feed-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .sidebar:first-child {
+        display: none;
+    }
+    
+    .header .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+    .nav a {
+        margin: 0;
+        font-size: 16px;
+    }
+    
+    .post-actions {
+        gap: 15px;
+    }
+    
+    .create-post {
+        padding: 15px;
+    }
+    
+    .post-author textarea {
+        font-size: 16px;
+    }
+    
+    .profile-card, .trending-topics, .search-box, .suggestions {
+        padding: 15px;
+    }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .feed {
+        padding: 15px;
+    }
+    
+    .post {
+        padding: 15px;
+    }
+    
+    .post-options {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .post-options button {
+        width: 100%;
+    }
+    
+    .nav a {
+        font-size: 14px;
+    }
+    
+    .logo h1 a {
+        font-size: 24px;
+    }
+}
